@@ -1,0 +1,40 @@
+{
+ "jsonrpc": "2.0",
+ "id": "any_string",
+ "result": {
+  "kind": "spectrum#pawsGetSpectrumResponse",
+  "type": "AVAIL_SPECTRUM_RESP",
+  "version": "1.0",
+  "timestamp": "2015-04-10T05:18:27Z",
+  "deviceDesc": {
+   "serialNumber": "your_serial_number",
+   "fccId": "TEST",
+   "fccTvbdDeviceType": "MODE_2"
+  },
+  "spectrumSchedules": [
+   {
+    "eventTime": {
+     "startTime": "2015-04-10T05:18:27Z",
+     "stopTime": "2015-04-12T05:18:27Z"
+    },
+    "spectra": [
+     {
+      "bandwidth": 6000000.0,
+      "frequencyRanges": [
+       {
+        "startHz": 5.4E7,
+        "stopHz": 5.18E8,
+        "maxPowerDBm": -52.799999947335436
+       },
+       {
+        "startHz": 5.18E8,
+        "stopHz": 5.3E8,
+        "maxPowerDBm": 15.99999928972511
+       },
+       {
+        "startHz": 5.3E8,
+        "stopHz": 5.72E8,
+        "maxPowerDBm": -52.799999947335436
+       },
+       {
+
