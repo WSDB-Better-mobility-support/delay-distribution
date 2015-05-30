@@ -249,7 +249,7 @@ hold on
 %------------mrs-------------->>>>
 [fg,xg]=ksdensity(mrs_delay_per_loc,'support','positive');
 fg=fg./sum(fg);
-plot(xg,fg , 'b-.', 'LineWidth' , 2);
+plot(xg,fg , 'b-+', 'LineWidth' , 1);
 %------------sbi-------------->>>>
 [fg,xg]=ksdensity(sbi_delay_per_loc,'support','positive');
 fg=fg./sum(fg);
@@ -261,21 +261,21 @@ plot(xg,fg , 'k:', 'LineWidth' , 2);
 %-----------------nominet----------->>>>>
 [fg,xg]=ksdensity(nominet_delay_per_loc,'support','positive');
 fg=fg./sum(fg);
-plot(xg,fg , 'k-', 'LineWidth' , 2);
+plot(xg,fg , 'k-^', 'LineWidth' , 1);
 %-----------------csir------------->>>>
 [fg,xg]=ksdensity(csir_delay_per_loc,'support','positive');
 fg=fg./sum(fg);
-plot(xg,fg , 'c-.', 'LineWidth' , 2);
+plot(xg,fg , 'k-.', 'LineWidth' , 2);
 %---------------fairspectrum--------->>>>>
 [fg,xg]=ksdensity(fair_delay_per_loc,'support','positive');
 fg=fg./sum(fg);
-plot(xg,fg , 'm--.', 'LineWidth' , 2);
+plot(xg,fg , 'm--', 'LineWidth' , 2);
 hold off
 xlabel('Response time (sec)','FontSize',ftsz);
 ylabel('Probability','FontSize',ftsz);
 leg = legend(legend_string,'FontSize',ftsz);
 set(gca,'FontSize',ftsz);
-set(leg,'FontSize',12)
+set(leg,'FontSize',ftsz)
 set(gca,'xTick',[0 0.5 [1:6]])
 %% Save matlab data
 fprintf('ggl_err=%d\nmrs_err=%d\nsbi_err=%d nom_err=%dcsi_err=%dfai_err=%d'...
