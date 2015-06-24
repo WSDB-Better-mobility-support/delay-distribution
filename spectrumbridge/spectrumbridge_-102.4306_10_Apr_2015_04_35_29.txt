@@ -1,1 +1,0 @@
-<ChannelResponse xmlns="http://schemas.datacontract.org/2004/07/SpectrumBridge.WhiteSpaces.Services.v3" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><ChannelCount>17</ChannelCount><ChannelList>22,24,26,28,30,32,34,40,42,44,45,46,47,48,49,50,51</ChannelList><RefreshIn>48</RefreshIn></ChannelResponse>1.314
