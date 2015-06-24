@@ -4,8 +4,8 @@ close all;
 clc;
 %%
 
-my_path='/home/amjed/Documents/Gproject/workspace/data/WSDB_DATA'; %Path to save files (select your own)
-ftsz=14; %Plot parameters
+my_path='/Users/amjed/Documents/WSDB_DATA'; %Path to save files (select your own)
+ftsz=16; %Plot parameters
 %legend_string={'GGL','MSR','SBI','OFC','NOM','CSI','FAI'}; %Create legend for the figures
 legend_string={'GGL','MSR','SBI','NOM','CSI','FAI'}; %Remove ofcom
 
@@ -167,8 +167,8 @@ for xx=longitude_start:longitude_step:longitude_end
         fprintf('csir\n')
         instant_clock=clock; %Start clock again if scanning only one database
         cd([my_path,'/csir']);
-        latitude_csir =num2str(str2num(latitude)-75);
-        longitude_csir= num2str(str2num(longitude)+24);
+        latitude_csir =num2str(str2num(latitude)-76);
+        longitude_csir= num2str(str2num(longitude)+28);
         [msg_csir,delay_csir_tmp,error_csir_tmp]=...
             database_connect_csir( latitude_csir ,longitude_csir,[my_path,'/csir']);
         
